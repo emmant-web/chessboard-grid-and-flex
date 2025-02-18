@@ -1,0 +1,45 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chessboard{
+    border: solid 0.3em #2B2D42;
+}
+
+.squares{
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+
+.offwhite{
+    background-color: #EEEED2;
+
+}
+
+
+.green{
+    background-color: #769656;
+    
+}
+
+.offwhite, .green{
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.dark-side{
+    font-size: 1.8rem;
+}
+
+.light-side{
+    font-size: 1.8rem;
+}
+
