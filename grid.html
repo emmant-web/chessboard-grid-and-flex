@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chessboard - Grid CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./grid/styles.css" />
+  </head>
+
+  <body class="bg-[#769656] min-h-screen">
+    <!-- Navigation Bar -->
+    <header
+      class="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-xl mx-auto px-4"
+    >
+      <!-- Hidden checkbox for mobile menu toggle -->
+      <input type="checkbox" id="mobile-menu-toggle" />
+
+      <nav
+        class="navbar bg-white/50 backdrop-blur-custom rounded-3xl px-3 py-3 shadow-lg border border-white/20"
+      >
+        <div class="flex items-center justify-between">
+          <!-- Logo/Brand -->
+          <div class="flex-shrink-0">
+            <div
+              class="w-6 h-6 bg-black rounded-sm flex items-center justify-center"
+            >
+              <span class="text-white text-xs font-bold"
+                ><i class="fa-solid fa-chess"></i
+              ></span>
+            </div>
+          </div>
+
+          <!-- Desktop Navigation (Centered Links) -->
+          <div
+            class="hidden md:flex flex-1 justify-center items-center space-x-8"
+          >
+            <a
+              href="index.html"
+              class="text-gray-800 hover:text-[#769656] transition-colors font-medium focus:text-[#769656] focus:outline-none"
+            >
+              Flex
+            </a>
+            <a
+              href="grid.html"
+              class="text-gray-800 hover:text-[#769656] transition-colors font-medium focus:text-[#769656] focus:outline-none"
+            >
+              Grid
+            </a>
+            <a
+              href="about.html"
+              class="text-gray-800 hover:text-[#769656] transition-colors font-medium focus:text-[#769656] focus:outline-none"
+            >
+              About
+            </a>
+          </div>
+
+          <!-- GitHub Button (Right Side) -->
+          <div class="hidden md:block">
+            <a
+              href="https://github.com/emmant-web/chessboard-grid-and-flex"
+              target="_blank"
+              class="bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#769656] transition"
+            >
+              GitHub
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <label for="mobile-menu-toggle" class="md:hidden p-2">
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </label>
+        </div>
+      </nav>
+
+      <!-- Mobile Navigation Menu -->
+      <div
+        class="mobile-menu hidden md:hidden mt-2 bg-white/50 backdrop-blur-custom rounded-3xl px-4 py-4 shadow-lg border border-white/20"
+      >
+        <div class="flex flex-col items-center space-y-3">
+          <a
+            href="index.html"
+            class="text-gray-800 hover:text-[#769656] transition-colors font-medium py-2 focus:text-[#769656] focus:outline-none"
+          >
+            Flex Chessboard
+          </a>
+          <a
+            href="grid.html"
+            class="text-gray-800 hover:text-[#769656] transition-colors font-medium py-2 focus:text-[#769656] focus:outline-none"
+          >
+            Grid Chessboard
+          </a>
+          <a
+            href="about.html"
+            class="text-gray-800 hover:text-[#769656] transition-colors font-medium py-2 focus:text-[#769656] focus:outline-none"
+          >
+            About
+          </a>
+          <!-- GitHub Button for Mobile -->
+          <a
+            href="https://github.com/emmant-web/chessboard-grid-and-flex"
+            target="_blank"
+            class="bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#769656] transition w-full text-center"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- GRID CHESSBOARD -->
+
+  <div class="chessboard">
+      <div class="beige dark-side"><i class="fa-solid fa-chess-rook"></i></div>
+      <div class="brown dark-side">
+        <i class="fa-solid fa-chess-knight"></i>
+      </div>
+      <div class="beige dark-side">
+        <i class="fa-solid fa-chess-bishop"></i>
+      </div>
+      <div class="brown dark-side"><i class="fa-solid fa-chess-queen"></i></div>
+
+      <div class="beige dark-side"><i class="fa-solid fa-chess-king"></i></div>
+      <div class="brown dark-side">
+        <i class="fa-solid fa-chess-bishop"></i>
+      </div>
+      <div class="beige dark-side">
+        <i class="fa-solid fa-chess-knight"></i>
+      </div>
+      <div class="brown dark-side"><i class="fa-solid fa-chess-rook"></i></div>
+
+      <div class="brown dark-side"><i class="fa-solid fa-chess-pawn"></i></div>
+      <div class="beige dark-side"><i class="fa-solid fa-chess-pawn"></i></div>
+      <div class="brown dark-side"><i class="fa-solid fa-chess-pawn"></i></div>
+      <div class="beige dark-side"><i class="fa-solid fa-chess-pawn"></i></div>
+
+      <div class="brown dark-side"><i class="fa-solid fa-chess-pawn"></i></div>
+      <div class="beige dark-side"><i class="fa-solid fa-chess-pawn"></i></div>
+      <div class="brown dark-side"><i class="fa-solid fa-chess-pawn"></i></div>
+      <div class="beige dark-side"><i class="fa-solid fa-chess-pawn"></i></div>
+
+      <div class="beige"></div>
+      <div class="brown"></div>
+      <div class="beige"></div>
+      <div class="brown"></div>
+
+      <div class="beige"></div>
+      <div class="brown"></div>
+      <div class="beige"></div>
+      <div class="brown"></div>
+
+      <div class="brown"></div>
+      <div class="beige"></div>
+      <div class="brown"></div>
+      <div class="beige"></div>
+
+      <div class="brown"></div>
+      <div class="beige"></div>
+      <div class="brown"></div>
+      <div class="beige"></div>
+
+      <div class="beige"></div>
+      <div class="brown"></div>
+      <div class="beige"></div>
+      <div class="brown"></div>
+
+      <div class="beige"></div>
+      <div class="brown"></div>
+      <div class="beige"></div>
+      <div class="brown"></div>
+
+      <div class="brown"></div>
+      <div class="beige"></div>
+      <div class="brown"></div>
+      <div class="beige"></div>
+
+      <div class="brown"></div>
+      <div class="beige"></div>
+      <div class="brown"></div>
+      <div class="beige"></div>
+
+      <div class="beige light-side"><i class="fa-solid fa-chess-pawn"></i></div>
+      <div class="brown light-side"><i class="fa-solid fa-chess-pawn"></i></div>
+      <div class="beige light-side"><i class="fa-solid fa-chess-pawn"></i></div>
+      <div class="brown light-side"><i class="fa-solid fa-chess-pawn"></i></div>
+
+      <div class="beige light-side"><i class="fa-solid fa-chess-pawn"></i></div>
+      <div class="brown light-side"><i class="fa-solid fa-chess-pawn"></i></div>
+      <div class="beige light-side"><i class="fa-solid fa-chess-pawn"></i></div>
+      <div class="brown light-side"><i class="fa-solid fa-chess-pawn"></i></div>
+
+      <div class="brown light-side"><i class="fa-solid fa-chess-rook"></i></div>
+      <div class="beige light-side">
+        <i class="fa-solid fa-chess-knight"></i>
+      </div>
+      <div class="brown light-side">
+        <i class="fa-solid fa-chess-bishop"></i>
+      </div>
+      <div class="beige light-side">
+        <i class="fa-solid fa-chess-queen"></i>
+      </div>
+
+      <div class="brown light-side"><i class="fa-solid fa-chess-king"></i></div>
+      <div class="beige light-side">
+        <i class="fa-solid fa-chess-bishop"></i>
+      </div>
+      <div class="brown light-side">
+        <i class="fa-solid fa-chess-knight"></i>
+      </div>
+      <div class="beige light-side"><i class="fa-solid fa-chess-rook"></i></div>
+    </div>
+
+
+  </body>
+</html>

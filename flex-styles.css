@@ -1,44 +1,41 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   height: 100vh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.chessboard {
-  display: grid;
-  grid-template-columns: repeat(8, 4rem);
-  grid-template-rows: repeat(8, 4rem);
+#chessboard {
   border: solid 0.3em #2b2d42;
 }
 
-.beige {
-  background-color: #f0d9b5;
+.squares {
+  display: flex;
+  flex-direction: row;
 }
 
-.brown {
-  background-color: #b58863;
+.offwhite {
+  background-color: #eeeed2;
 }
 
-.beige,
-.brown {
-  /* for centering the chess piece */
+.green {
+  background-color: #769656;
+}
+
+.offwhite,
+.green {
+  height: 4rem;
+  width: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .dark-side {
-  color: black;
   font-size: 1.8rem;
 }
 
 .light-side {
-  color: white;
   font-size: 1.8rem;
 }
 
